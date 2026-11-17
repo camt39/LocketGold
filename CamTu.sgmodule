@@ -43,7 +43,7 @@ spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.co
 SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/SoundCloudGoPlus.js
 
 #VSCO
-VSCO = type=http-request ^https://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/VSCO.js, requires-body=true, timeout=60
+#VSCO = type=http-request ^https://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/VSCO.js, requires-body=true, timeout=60
 
 #AlightMotion
 AlightMotion = type=http-response,script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/AlightMotion.js,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,max-size=131072,requires-body=true,timeout=10,enable=true
@@ -75,8 +75,8 @@ revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(r
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/deleteHeader.js, timeout=60
 locket_rc = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+, script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/Locket_Unlocked.js, requires-body=true, max-size=-1, timeout=60
 
-#RevenueCatVip
-RevenueCatVip = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/revenuecat.js, requires-body=true, max-size=-1, timeout=60
+#RevenueCatVip (Tạm khóa để không đè ngày 2005-01-09 lên Locket)
+#RevenueCatVip = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/revenuecat.js, requires-body=true, max-size=-1, timeout=60
 
 #iTunes
 iTunes = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/iTunes.js, requires-body=true, max-size=-1, timeout=60
