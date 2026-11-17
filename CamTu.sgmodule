@@ -66,7 +66,6 @@ BeautyPlus = type=http-response, pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/Locket_camtu.js, requires-body=true, max-size=-1, timeout=60
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/deleteHeader.js, timeout=60
 locket_rc = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+, script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/Locket_Popup_Camtu.js, requires-body=true, max-size=-1, timeout=60
-locket_rc_us = type=http-request, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/namespaces\/firebase:fetch, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/Locket_rc_us.js, timeout=10
 
 #iTunes
 iTunes = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/camt39/LocketGold/main/iTunes.js, requires-body=true, max-size=-1, timeout=60
