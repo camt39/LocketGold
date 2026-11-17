@@ -54,7 +54,7 @@ if (ua.includes("Locket")) {
             title: "Gay to rồi🏳️‍🌈.",
             feature_set: [
                 {
-                    title: "Nhớ follow kênh tiktok @ ✨",
+                    title: "Nhớ follow kênh tiktok @tictocuser039 ✨",
                     body: "Không cần lắm vì thử code mượn.",
                     imageURL: "https://cdn.upanhlaylink.com/i/T2KzOdli.jpg"
                 }
