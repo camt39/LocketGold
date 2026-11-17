@@ -12,7 +12,7 @@ if (obj && obj.entries) {
       {
         title: "Nhớ follow kênh tiktok @tictocuser039 ✨",
         body: "Cũng không cần lắm tại thử code mượn.",
-        imageURL: "https://cdn.upanhlaylink.com/img/JNBpQnLu.png"
+        imageURL: "https://cdn.upanhlaylink.com/i/T2KzOdli.jpg"
       }
     ],
     primary_button_title: "Xong rồi nhé!",
