@@ -2260,20 +2260,23 @@ if (ua.includes("Locket")) {
     }, {
       'section': "🎨 Decorative by Duy Vinh",
       'items': [{
-        'overlay_id': "caption:duyvinh09",
+        'overlay_id': "caption:camt39",
         'source': "remote",
         'caption': {
           'background': {
-            'colors': ["#B8E7FF", "#A8F5D0", "#DCCBFF"]
+            'colors': ["#F8BBD0", "#E91E63"]
           },
           'icon': {
-            'data': "tortoise.fill",
-            'type': "sf_symbol",
-            'color': "#183153"
+            'data': '🌷',
+            'type': "emoji"
           },
           'max_lines': 0x1,
-          'text': "duyvinh09",
-          'text_color': "#183153",
+          'text': "camt39",
+          'localized_text': {
+            'en': "camt39",
+            'vn': "camt39"
+          },
+          'text_color': "#FFFFFFE5",
           'type': "static_content"
         }
       }, {
