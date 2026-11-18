@@ -1,8 +1,3 @@
-
-
-
-Biểu tượng JS
-Locket_Popup_Camtu_fixed
 // ============================================================
 // Locket Remote Config Rewrite
 // Endpoint: firebaseremoteconfig.googleapis.com
@@ -60,7 +55,7 @@ if (ua.includes("Locket")) {
             feature_set: [
                 {
                     title: "Nhớ follow kênh tiktok @tictocuser039 ✨",
-                    body: "dinh09",
+                    body: "dvinh09",
                     imageURL: "https://cdn.upanhlaylink.com/i/8zn1WzEO.png"
                 }
             ],
