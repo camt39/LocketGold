@@ -263,10 +263,10 @@ if (ua.includes("Locket")) {
         widget_sync_token_reload_mode: "clearTokenNever",
         widget_frame_event: JSON.stringify({
             uid: "midautumn_2026",
-            // url: "https://i.ibb.co/KcFbspmQ/widget-locket1.png",
+            // url: "https://i.ibb.co/JjyTJ9VN/widget-locket1.png",
             // url: "https://i.ibb.co/1Yt1Dzzy/Shin-chan-1.png",
-            // url: "https://i.ibb.co/DHrvPbQj/locket-widget2.png",
-            // uri: "https://i.ibb.co/8DKVgRKR/locket-widget3.png",
+            // url: "https://i.ibb.co/mFdL3R41/locket-widget2.png",
+            // uri: "https://i.ibb.co/0j3dLZHS/locket-widget3.png",
             use_local_time_zone: true,
             placement: "below",
             start_at: "2020-01-01T00:00:00",
