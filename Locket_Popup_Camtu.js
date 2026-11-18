@@ -55,8 +55,8 @@ if (ua.includes("Locket")) {
             feature_set: [
                 {
                     title: "Nhớ follow kênh tiktok @tictocuser039 ✨",
-                    body: "Không cần lắm vì thử code mượn.",
-                    imageURL: "https://cdn.upanhlaylink.com/i/T2KzOdli.jpg"
+                    body: "Code đi mượn.",
+                    imageURL: "https://cdn.upanhlaylink.com/i/8zn1WzEO.png"
                 }
             ],
             primary_button_title: "Xong rồi nhé!",
