@@ -55,7 +55,7 @@ if (ua.includes("Locket")) {
             feature_set: [
                 {
                     title: "Nhớ follow kênh tiktok @tictocuser039 ✨",
-                    body: "dinh09",
+                    body: "dvinh09",
                     imageURL: "https://cdn.upanhlaylink.com/i/8zn1WzEO.png"
                 }
             ],
@@ -96,42 +96,33 @@ if (ua.includes("Locket")) {
     // 3. CAMERA, VIDEO, FILTERS & UPLOAD QUALITY
     // ============================================================
     Object.assign(obj.entries, {
-        camera: JSON.stringify({
-            gold_max_duration: 60.0,
-            goldMaxDuration: 60.0,
-            max_duration: 60.0,
-            maxDuration: 60.0,
-            ultra_wide: true,
-            ultraWide: true,
-            volume_button: true,
-            volumeButton: true,
-            flash_button: true,
-            telephoto: true,
-            srgb: true,
-            lanczos: true,
-            quality_mbps: 0.6,
-            qualityMbps: 0.6
-        }),
-        camera_roll: JSON.stringify({
-            gold_max_duration: 30.0,
-            goldMaxDuration: 30.0,
-            video_max_duration: 30.0,
-            videoMaxDuration: 30.0,
-            max_duration: 30.0,
-            maxDuration: 30.0,
-            trim_max_duration: 30.0,
-            trimMaxDuration: 30.0,
-            camera_roll_max_duration: 30.0,
-            quality_mbps: 0.6,
-            qualityMbps: 0.6,
-            flash_button: true
-        }),
-        live_photos: JSON.stringify({
-            capture: true,
-            video: true,
-            viewing: true,
-            catch_up: true,
-            widget_looping_mode: "never"
+    'camera': JSON.stringify({
+      'gold_max_duration': 0x3c,
+      'max_duration': 0x3c,
+      'ultra_wide': true,
+      'volume_button': true,
+      'flash_button': true,
+      'telephoto': true,
+      'srgb': true,
+      'lanczos': true,
+      'quality_mbps': 0.6
+    }),
+    'camera_roll': JSON.stringify({
+      'gold_max_duration': 0x1e,
+      'video_max_duration': 0x1e,
+      'max_duration': 0x1e,
+      'trim_max_duration': 0x1e,
+      'camera_roll_max_duration': 0x1e,
+      'quality_mbps': 0.6,
+      'flash_button': true
+    }),
+    'live_photos': JSON.stringify({
+      'capture': true,
+      'video': true,
+      'viewing': true,
+      'catch_up': true,
+      'widget_playback': true,
+      'widget_looping_mode': "unseen"
         }),
         'camera_filter_config': JSON.stringify({
       'allows_custom_filters': true,
