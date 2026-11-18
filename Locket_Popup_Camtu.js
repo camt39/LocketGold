@@ -29,6 +29,8 @@ if (ua.includes("Locket")) {
             remove_ads: "enabled",
             video: "enabled",
             custom_widget_frames: "enabled",
+            camera_filter_sheet: "enabled",
+            camera_filters: "enabled",
             streak_recovery: "enabled"
         }),
         upsell_features: JSON.stringify({
@@ -60,7 +62,7 @@ if (ua.includes("Locket")) {
                 }
             ],
             primary_button_title: "Xong rồi nhé!",
-            campaign: "locket_gold_camtu_v3",
+            campaign: "locket_gold_camtu_v4",
             start_at: "2005-03-09T00:00:00",
             end_at: "2099-12-31T23:59:59",
             use_local_time_zone: true
@@ -137,14 +139,8 @@ if (ua.includes("Locket")) {
       'allows_custom_filters': true,
       'show_filter_button': true,
       'sheet_enabled': true,
-      'open_sheet_immediately': true,
+      'open_sheet_immediately': false,
       'sheet_filters': [{
-        'id': "group_hot_ai_3d",
-        'title': {
-          'en': "AI 3D Hot 🔥"
-        },
-        'filter_ids': ["fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts", "volcano_lava", "rain_storm", "fortnite_llama", "watercolor_art", "golden_hour"]
-      }, {
         'id': "group_photobooth",
         'title': {
           'en': "Khung & Photobooth 📸"
@@ -156,6 +152,12 @@ if (ua.includes("Locket")) {
           'en': "Khung Viền & Hot Trend 🖼️"
         },
         'filter_ids': ["frame_classic_pb", "sticker_binh_luan_minh_tue", "cmt_locket", "khung_hello_kitty_pastel_ngot_ngao", "khung_hello_kitty_hong_pastel", "khung_pastel_vien_ren", "khung_hoa_pastel_vien_xanh_xinh", "khung_spiderred", "khung_khong_gian_xanh_pastel", "khung_ngoi_sao_hong_pastel", "khung_pastel_so_hai_cau", "khung_shin_chan", "khung_anh_hellokitty_v_sao", "khung_xanh_tay_sao_vang", "sinh_nhat_hello_kitty", "pb_single_y2k_silver_holo", "pb_single_denim_ripped", "pb_single_film_nostalgia"]
+      }, {
+        'id': "group_hot_ai_3d",
+        'title': {
+          'en': "AI 3D Hot 🔥"
+        },
+        'filter_ids': ["fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts", "volcano_lava", "rain_storm", "fortnite_llama", "watercolor_art", "golden_hour"]
       }, {
         'id': "group_mischief",
         'title': {
@@ -194,12 +196,6 @@ if (ua.includes("Locket")) {
         'filter_ids': ["easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"]
       }],
       'filter_groups': [{
-        'id': "group_hot_ai_3d",
-        'title': {
-          'en': "AI 3D Hot 🔥"
-        },
-        'filter_ids': ["fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts", "volcano_lava", "rain_storm", "fortnite_llama", "watercolor_art", "golden_hour"]
-      }, {
         'id': "group_photobooth",
         'title': {
           'en': "Khung & Photobooth 📸"
@@ -211,6 +207,12 @@ if (ua.includes("Locket")) {
           'en': "Khung Viền & Hot Trend 🖼️"
         },
         'filter_ids': ["frame_classic_pb", "sticker_binh_luan_minh_tue", "cmt_locket", "khung_hello_kitty_pastel_ngot_ngao", "khung_hello_kitty_hong_pastel", "khung_pastel_vien_ren", "khung_hoa_pastel_vien_xanh_xinh", "khung_spiderred", "khung_khong_gian_xanh_pastel", "khung_ngoi_sao_hong_pastel", "khung_pastel_so_hai_cau", "khung_shin_chan", "khung_anh_hellokitty_v_sao", "khung_xanh_tay_sao_vang", "sinh_nhat_hello_kitty", "pb_single_y2k_silver_holo", "pb_single_denim_ripped", "pb_single_film_nostalgia"]
+      }, {
+        'id': "group_hot_ai_3d",
+        'title': {
+          'en': "AI 3D Hot 🔥"
+        },
+        'filter_ids': ["fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts", "volcano_lava", "rain_storm", "fortnite_llama", "watercolor_art", "golden_hour"]
       }, {
         'id': "group_mischief",
         'title': {
@@ -248,7 +250,7 @@ if (ua.includes("Locket")) {
         },
         'filter_ids': ["easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"]
       }],
-      'picker_filters': ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows", "bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "slimed", "princess", "disco_lights", "cash_money", "happy_birthday", "cutesy", "sticker_face", "flower_crown", "love_bug", "wedding", "cowboy_cowgirl", "giraffe", "clown", "easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty", "frame_berry_days", "frame_happy_snap", "frame_sky_diary", "photobooth_4cut", "photobooth_cute", "pb_holo_4cut", "pb_scrapbook_ripped_4cut", "pb_ripped_paper_4cut", "pb_denim_ripped_2x2", "frame_classic_pb", "sticker_binh_luan_minh_tue", "cmt_locket", "khung_hello_kitty_pastel_ngot_ngao", "khung_hello_kitty_hong_pastel", "khung_pastel_vien_ren", "khung_hoa_pastel_vien_xanh_xinh", "khung_spiderred", "khung_khong_gian_xanh_pastel", "khung_ngoi_sao_hong_pastel", "khung_pastel_so_hai_cau", "khung_shin_chan", "khung_anh_hellokitty_v_sao", "khung_xanh_tay_sao_vang", "sinh_nhat_hello_kitty", "pb_single_y2k_silver_holo", "pb_single_denim_ripped", "pb_single_film_nostalgia", "locket", "fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts", "rose_flower", "shrek_ogre", "superhero_cape", "spooky_ghost", "pirate_hat", "volcano_lava", "rain_storm", "fortnite_llama", "watercolor_art", "golden_hour", "jungle_leaf", "cute_zombie"],
+      'picker_filters': ["frame_berry_days", "frame_happy_snap", "frame_sky_diary", "photobooth_4cut", "photobooth_cute", "pb_holo_4cut", "pb_scrapbook_ripped_4cut", "pb_ripped_paper_4cut", "pb_denim_ripped_2x2", "frame_classic_pb", "sticker_binh_luan_minh_tue", "cmt_locket", "khung_hello_kitty_pastel_ngot_ngao", "khung_hello_kitty_hong_pastel", "khung_pastel_vien_ren", "khung_hoa_pastel_vien_xanh_xinh", "khung_spiderred", "khung_khong_gian_xanh_pastel", "khung_ngoi_sao_hong_pastel", "khung_pastel_so_hai_cau", "khung_shin_chan", "khung_anh_hellokitty_v_sao", "khung_xanh_tay_sao_vang", "sinh_nhat_hello_kitty", "pb_single_y2k_silver_holo", "pb_single_denim_ripped", "pb_single_film_nostalgia", "locket", "sweat_hearts", "okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows", "bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "slimed", "princess", "disco_lights", "cash_money", "happy_birthday", "cutesy", "sticker_face", "flower_crown", "love_bug", "wedding", "cowboy_cowgirl", "giraffe", "clown", "easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty", "fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "rose_flower", "shrek_ogre", "superhero_cape", "spooky_ghost", "pirate_hat", "volcano_lava", "rain_storm", "fortnite_llama", "watercolor_art", "golden_hour", "jungle_leaf", "cute_zombie"],
       'remote_filters': [{
         'uid': "rose_flower",
         'id': "rose_flower",
@@ -1671,23 +1673,17 @@ if (ua.includes("Locket")) {
         widget_stale_state_enabled: "false",
         widget_last_sent_indicator: "false",
         widget_sync_token_reload_mode: "clearTokenNever",
-        widget_frame_event: (function() {
-            var listFrames = [
-                "https://i.ibb.co/JjyTJ9VN/widget-locket1.png",
-                "https://i.ibb.co/1Yt1Dzzy/Shin-chan-1.png",
-                "https://i.ibb.co/mFdL3R41/locket-widget2.png",
-                "https://i.ibb.co/0j3dLZHS/locket-widget3.png"
-            ];
-            var randomIdx = Math.floor(Math.random() * listFrames.length);
-            return JSON.stringify({
-                uid: "camtu_frame_" + randomIdx,
-                url: listFrames[randomIdx],
-                use_local_time_zone: true,
-                placement: "below",
-                start_at: "2020-01-01T00:00:00",
-                end_at: "2099-12-31T23:59:59"
-            });
-        })(),
+        widget_frame_event: JSON.stringify({
+            uid: "shin_chan_v2",
+            // url: "https://i.ibb.co/JjyTJ9VN/widget-locket1.png",
+            url: "https://i.ibb.co/1Yt1Dzzy/Shin-chan-1.png",
+            // url: "https://i.ibb.co/mFdL3R41/locket-widget2.png",
+            // url: "https://i.ibb.co/0j3dLZHS/locket-widget3.png",
+            use_local_time_zone: true,
+            placement: "below",
+            start_at: "2020-01-01T00:00:00",
+            end_at: "2099-12-31T23:59:59"
+        }),
         live_activity_onboarding: "true",
         live_activity_onboarding_variant: "friending",
         register_live_activity_push_to_start_token: "true",
