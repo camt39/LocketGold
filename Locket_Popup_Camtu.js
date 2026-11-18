@@ -1,3 +1,8 @@
+
+
+
+Biểu tượng JS
+Locket_Popup_Camtu_fixed
 // ============================================================
 // Locket Remote Config Rewrite
 // Endpoint: firebaseremoteconfig.googleapis.com
@@ -55,12 +60,12 @@ if (ua.includes("Locket")) {
             feature_set: [
                 {
                     title: "Nhớ follow kênh tiktok @tictocuser039 ✨",
-                    body: "dvinh09",
+                    body: "dinh09",
                     imageURL: "https://cdn.upanhlaylink.com/i/8zn1WzEO.png"
                 }
             ],
             primary_button_title: "Xong rồi nhé!",
-            campaign: "locket_gold_camtu_v2",
+            campaign: "locket_gold_camtu_v3",
             start_at: "2005-03-09T00:00:00",
             end_at: "2099-12-31T23:59:59",
             use_local_time_zone: true
@@ -96,33 +101,42 @@ if (ua.includes("Locket")) {
     // 3. CAMERA, VIDEO, FILTERS & UPLOAD QUALITY
     // ============================================================
     Object.assign(obj.entries, {
-    'camera': JSON.stringify({
-      'gold_max_duration': 0x3c,
-      'max_duration': 0x3c,
-      'ultra_wide': true,
-      'volume_button': true,
-      'flash_button': true,
-      'telephoto': true,
-      'srgb': true,
-      'lanczos': true,
-      'quality_mbps': 0.6
-    }),
-    'camera_roll': JSON.stringify({
-      'gold_max_duration': 0x1e,
-      'video_max_duration': 0x1e,
-      'max_duration': 0x1e,
-      'trim_max_duration': 0x1e,
-      'camera_roll_max_duration': 0x1e,
-      'quality_mbps': 0.6,
-      'flash_button': true
-    }),
-    'live_photos': JSON.stringify({
-      'capture': true,
-      'video': true,
-      'viewing': true,
-      'catch_up': true,
-      'widget_playback': true,
-      'widget_looping_mode': "unseen"
+        camera: JSON.stringify({
+            gold_max_duration: 60.0,
+            goldMaxDuration: 60.0,
+            max_duration: 60.0,
+            maxDuration: 60.0,
+            ultra_wide: true,
+            ultraWide: true,
+            volume_button: true,
+            volumeButton: true,
+            flash_button: true,
+            telephoto: true,
+            srgb: true,
+            lanczos: true,
+            quality_mbps: 0.6,
+            qualityMbps: 0.6
+        }),
+        camera_roll: JSON.stringify({
+            gold_max_duration: 30.0,
+            goldMaxDuration: 30.0,
+            video_max_duration: 30.0,
+            videoMaxDuration: 30.0,
+            max_duration: 30.0,
+            maxDuration: 30.0,
+            trim_max_duration: 30.0,
+            trimMaxDuration: 30.0,
+            camera_roll_max_duration: 30.0,
+            quality_mbps: 0.6,
+            qualityMbps: 0.6,
+            flash_button: true
+        }),
+        live_photos: JSON.stringify({
+            capture: true,
+            video: true,
+            viewing: true,
+            catch_up: true,
+            widget_looping_mode: "never"
         }),
         'camera_filter_config': JSON.stringify({
       'allows_custom_filters': true,
@@ -1662,17 +1676,23 @@ if (ua.includes("Locket")) {
         widget_stale_state_enabled: "false",
         widget_last_sent_indicator: "false",
         widget_sync_token_reload_mode: "clearTokenNever",
-        widget_frame_event: JSON.stringify({
-            uid: "shin_chan",
-            url: "https://i.ibb.co/JjyTJ9VN/widget-locket1.png",
-            url: "https://i.ibb.co/1Yt1Dzzy/Shin-chan-1.png",
-            url: "https://i.ibb.co/mFdL3R41/locket-widget2.png",
-            url: "https://i.ibb.co/0j3dLZHS/locket-widget3.png",
-            use_local_time_zone: true,
-            placement: "below",
-            start_at: "2020-01-01T00:00:00",
-            end_at: "2099-12-31T23:59:59"
-        }),
+        widget_frame_event: (function() {
+            var listFrames = [
+                "https://i.ibb.co/JjyTJ9VN/widget-locket1.png",
+                "https://i.ibb.co/1Yt1Dzzy/Shin-chan-1.png",
+                "https://i.ibb.co/mFdL3R41/locket-widget2.png",
+                "https://i.ibb.co/0j3dLZHS/locket-widget3.png"
+            ];
+            var randomIdx = Math.floor(Math.random() * listFrames.length);
+            return JSON.stringify({
+                uid: "camtu_frame_" + randomIdx,
+                url: listFrames[randomIdx],
+                use_local_time_zone: true,
+                placement: "below",
+                start_at: "2020-01-01T00:00:00",
+                end_at: "2099-12-31T23:59:59"
+            });
+        })(),
         live_activity_onboarding: "true",
         live_activity_onboarding_variant: "friending",
         register_live_activity_push_to_start_token: "true",
@@ -6554,5 +6574,4 @@ if (ua.includes("Locket")) {
     }])
   });
 }
-$done({
 $done({ body: JSON.stringify(obj) });
