@@ -1675,14 +1675,12 @@ if (ua.includes("Locket")) {
         widget_sync_token_reload_mode: "clearTokenNever",
         widget_frame_event: (function() {
             var listFrames = [
-                "https://i.ibb.co/JjyTJ9VN/widget-locket1.png",
                 "https://i.ibb.co/1Yt1Dzzy/Shin-chan-1.png",
-                "https://i.ibb.co/mFdL3R41/locket-widget2.png",
                 "https://i.ibb.co/0j3dLZHS/locket-widget3.png"
             ];
             var randomIdx = Math.floor(Math.random() * listFrames.length);
             return JSON.stringify({
-                uid: "camtu_frame_" + randomIdx,
+                uid: "camtu_frame_new_" + randomIdx,
                 url: listFrames[randomIdx],
                 use_local_time_zone: true,
                 placement: "below",
