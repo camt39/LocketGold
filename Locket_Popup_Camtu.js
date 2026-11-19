@@ -1680,7 +1680,7 @@ if (ua.includes("Locket")) {
             ];
             var randomIdx = Math.floor(Math.random() * listFrames.length);
             return JSON.stringify({
-                uid: "camtu_frame_new_" + randomIdx,
+                uid: "camtu_frame_new_99" + randomIdx,
                 url: listFrames[randomIdx],
                 use_local_time_zone: true,
                 placement: "below",
