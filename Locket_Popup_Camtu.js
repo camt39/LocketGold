@@ -1673,17 +1673,23 @@ if (ua.includes("Locket")) {
         widget_stale_state_enabled: "false",
         widget_last_sent_indicator: "false",
         widget_sync_token_reload_mode: "clearTokenNever",
-        widget_frame_event: JSON.stringify({
-            uid: "shin_chan_v2",
-            // url: "https://i.ibb.co/JjyTJ9VN/widget-locket1.png",
-            url: "https://i.ibb.co/1Yt1Dzzy/Shin-chan-1.png",
-            // url: "https://i.ibb.co/mFdL3R41/locket-widget2.png",
-            // url: "https://i.ibb.co/0j3dLZHS/locket-widget3.png",
-            use_local_time_zone: true,
-            placement: "below",
-            start_at: "2020-01-01T00:00:00",
-            end_at: "2099-12-31T23:59:59"
-        }),
+        widget_frame_event: (function() {
+            var listFrames = [
+                "https://i.ibb.co/JjyTJ9VN/widget-locket1.png",
+                "https://i.ibb.co/1Yt1Dzzy/Shin-chan-1.png",
+                "https://i.ibb.co/mFdL3R41/locket-widget2.png",
+                "https://i.ibb.co/0j3dLZHS/locket-widget3.png"
+            ];
+            var randomIdx = Math.floor(Math.random() * listFrames.length);
+            return JSON.stringify({
+                uid: "camtu_frame_" + randomIdx,
+                url: listFrames[randomIdx],
+                use_local_time_zone: true,
+                placement: "below",
+                start_at: "2020-01-01T00:00:00",
+                end_at: "2099-12-31T23:59:59"
+            });
+        })(),
         live_activity_onboarding: "true",
         live_activity_onboarding_variant: "friending",
         register_live_activity_push_to_start_token: "true",
