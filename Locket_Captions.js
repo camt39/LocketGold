@@ -66,7 +66,7 @@ function respondError(code, message) {
       response: {
         status: 200,
         headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" },
-        body: JSON.stringify({ result: { caption: result.result.caption } })
+        body: JSON.stringify(result)
       }
     });
   });
