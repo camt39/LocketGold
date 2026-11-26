@@ -2,7 +2,7 @@
 // Locket AI Captions Bridge (Quote & Breaking News)
 // Endpoint: generateCaption -> CamTu Cloudflare Worker
 // ============================================================
-var CAPTION_WORKER = "https://locket.dinhduyvinh.tech/generateCaption";
+var CAPTION_WORKER = "https://camtu-photobooth.nlctu9305.workers.dev/generateCaption";
 var NATIVE_CAPTION_API = /^https:\/\/(?:api\.locketcamera\.com|us-central1-locket-4252a\.cloudfunctions\.net)\/(?:[^?#]*\/)?generateCaption(?:\?|$)/i;
 var finished = false;
 
