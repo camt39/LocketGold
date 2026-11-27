@@ -1,6 +1,7 @@
 #!name=CamTu All In One
 #!desc=Module tổng hợp mở khóa VIP & Locket Gold bởi CamTu
-#!author=CamTu
+#!author=duyvinh09
+#!custom=camtu
 #!moduleUrl=https://raw.githubusercontent.com/camt39/LocketGold/main/CamTu.sgmodule
 #!howtouse=Shadowrocket
 
